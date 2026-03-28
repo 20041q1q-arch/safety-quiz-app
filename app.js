@@ -38,15 +38,19 @@ function buildSubjectList() {
 
 // 년도 목록 생성
 function buildYearList() {
-  const years = [...new Set(allQuestions.map(q => q.year))].sort((a, b) => b - a);
+  // 년도+회차 조합 추출 후 정렬 (최신순)
+  const combos = [...new Map(
+    allQuestions.map(q => [`${q.year}-${q.session}`, { year: q.year, session: q.session }])
+  ).values()].sort((a, b) => b.year - a.year || b.session - a.session);
+
   const el = document.getElementById('year-list');
   el.innerHTML = '';
-  years.forEach(y => {
+  combos.forEach(({ year, session }) => {
     const btn = document.createElement('button');
     btn.className = 'menu-btn';
-    const count = allQuestions.filter(q => q.year === y).length;
-    btn.textContent = `${y}년도  (${count}문제)`;
-    btn.onclick = () => startYearExam(y);
+    const count = allQuestions.filter(q => q.year === year && q.session === session).length;
+    btn.textContent = `${year}년도 ${session}회  (${count}문제)`;
+    btn.onclick = () => startYearExam(year, session);
     el.appendChild(btn);
   });
 }
@@ -63,10 +67,10 @@ function startSubjectQuiz(subject) {
 }
 
 // 년도별 모의고사 시작
-function startYearExam(year) {
+function startYearExam(year, session) {
   mode = 'year';
-  currentQuestions = allQuestions.filter(q => q.year === year);
-  startExam(`${year}년도 모의고사`);
+  currentQuestions = allQuestions.filter(q => q.year === year && q.session === session);
+  startExam(`${year}년도 ${session}회 모의고사`);
 }
 
 // 랜덤 모의고사 시작
