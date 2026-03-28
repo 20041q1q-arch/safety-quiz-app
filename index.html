@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>산업안전산업기사 필기 문제풀이</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 메인 화면 -->
+  <div id="screen-main" class="screen active">
+    <div class="container">
+      <h1 class="app-title">산업안전산업기사</h1>
+      <p class="app-subtitle">필기 문제풀이</p>
+      <div class="menu">
+        <button class="menu-btn" onclick="showScreen('screen-subject')">📚 과목별 문제풀이</button>
+        <button class="menu-btn" onclick="showScreen('screen-year')">📅 년도별 모의고사</button>
+        <button class="menu-btn" onclick="startRandomExam()">🎲 랜덤 모의고사</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 과목 선택 화면 -->
+  <div id="screen-subject" class="screen">
+    <div class="container">
+      <button class="back-btn" onclick="showScreen('screen-main')">← 뒤로</button>
+      <h2 class="section-title">과목 선택</h2>
+      <div class="menu" id="subject-list"></div>
+    </div>
+  </div>
+
+  <!-- 년도 선택 화면 -->
+  <div id="screen-year" class="screen">
+    <div class="container">
+      <button class="back-btn" onclick="showScreen('screen-main')">← 뒤로</button>
+      <h2 class="section-title">년도 선택</h2>
+      <div class="menu" id="year-list"></div>
+    </div>
+  </div>
+
+  <!-- 문제 풀이 화면 (과목별 - 즉시 피드백) -->
+  <div id="screen-quiz" class="screen">
+    <div class="container">
+      <button class="back-btn" onclick="confirmExit()">← 나가기</button>
+      <div class="quiz-header">
+        <span id="quiz-subject-label" class="subject-label"></span>
+        <span id="quiz-progress" class="progress-text"></span>
+      </div>
+      <div class="question-card">
+        <p id="quiz-question" class="question-text"></p>
+        <div id="quiz-options" class="options"></div>
+      </div>
+      <div id="quiz-feedback" class="feedback hidden"></div>
+      <button id="btn-next" class="next-btn hidden" onclick="nextQuestion()">다음 문제 →</button>
+    </div>
+  </div>
+
+  <!-- 모의고사 화면 (마지막에 채점) -->
+  <div id="screen-exam" class="screen">
+    <div class="container">
+      <button class="back-btn" onclick="confirmExit()">← 나가기</button>
+      <div class="quiz-header">
+        <span id="exam-label" class="subject-label"></span>
+        <span id="exam-progress" class="progress-text"></span>
+        <span id="exam-timer" class="timer">02:30:00</span>
+      </div>
+      <div class="question-card">
+        <p id="exam-question" class="question-text"></p>
+        <div id="exam-options" class="options"></div>
+      </div>
+      <div class="exam-nav">
+        <button class="nav-btn" onclick="examPrev()">← 이전</button>
+        <button class="nav-btn" onclick="examNext()">다음 →</button>
+      </div>
+      <button class="submit-btn" onclick="submitExam()">채점하기</button>
+    </div>
+  </div>
+
+  <!-- 결과 화면 -->
+  <div id="screen-result" class="screen">
+    <div class="container">
+      <h2 class="section-title">결과</h2>
+      <div class="result-card">
+        <p id="result-score" class="result-score"></p>
+        <p id="result-detail" class="result-detail"></p>
+      </div>
+      <div id="result-wrong-list" class="wrong-list"></div>
+      <button class="menu-btn" onclick="showScreen('screen-main')">홈으로</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
