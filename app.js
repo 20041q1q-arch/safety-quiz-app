@@ -144,13 +144,14 @@ function selectQuizAnswer(selected) {
   feedback.className = `feedback ${isCorrect ? 'correct-fb' : 'wrong-fb'}`;
 
   if (isCorrect) {
-    feedback.textContent = '✅ 정답입니다!';
+    feedback.innerHTML = '✅ 정답입니다!';
   } else {
     const correctText = q.options[q.answer - 1];
-    feedback.textContent = `❌ 오답입니다. 정답: ${q.answer}번. ${correctText}`;
+    let html = `❌ 오답입니다. 정답: <strong>${q.answer}번. ${correctText}</strong>`;
     if (q.explanation) {
-      feedback.textContent += `\n\n💡 ${q.explanation}`;
+      html += `<br><br>💡 <strong>풀이</strong><br>${q.explanation.replace(/\n/g, '<br>')}`;
     }
+    feedback.innerHTML = html;
   }
 
   document.getElementById('btn-next').classList.remove('hidden');
@@ -246,10 +247,14 @@ function submitExam() {
     wrongItems.forEach(({ q, myAnswer }) => {
       const div = document.createElement('div');
       div.className = 'wrong-item';
+      const explanationHtml = q.explanation
+        ? `<p class="exp-text">💡 <strong>풀이</strong><br>${q.explanation.replace(/\n/g, '<br>')}</p>`
+        : '';
       div.innerHTML = `
         <p class="q-text">${q.question}</p>
         <p class="my-text">내 답: ${myAnswer ? `${myAnswer}번. ${q.options[myAnswer - 1]}` : '미응답'}</p>
         <p class="a-text">정답: ${q.answer}번. ${q.options[q.answer - 1]}</p>
+        ${explanationHtml}
       `;
       wrongEl.appendChild(div);
     });

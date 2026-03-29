@@ -319,3 +319,11 @@ body {
 .wrong-item .my-text {
   color: #e53935;
 }
+
+.wrong-item .exp-text {
+  color: #555;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #f0d0d0;
+  line-height: 1.7;
+}
