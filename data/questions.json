@@ -1,97 +1,1762 @@
 [
   {
     "id": 1,
-    "subject": "설비보전",
-    "year": null,
-    "round": null,
-    "question": "[샘플] 설비 보전의 목적으로 가장 옳은 것은?",
+    "subject": "공유압 및 자동화시스템",
+    "year": 2020,
+    "round": 3,
+    "question": "유압 액추에이터의 종류가 아닌 것은?",
     "options": [
-      "설비의 생산성 향상",
-      "설비의 고장을 사전에 예방하고 수명을 연장하여 생산성을 유지·향상시키는 것",
-      "설비의 외관을 청결하게 유지하는 것",
-      "설비의 교체 주기를 단축하는 것"
+      "유압 실린더",
+      "유압 모터",
+      "요동형 액추에이터",
+      "유압 펌프"
     ],
-    "answer": 2,
-    "explanation": "설비 보전의 목적은 설비의 고장을 사전에 예방하고 수명을 연장하여 생산성을 유지·향상시키는 것입니다.",
+    "answer": 4,
+    "explanation": "유압 펌프는 유압 에너지를 발생시키는 장치로 액추에이터가 아니라 동력원이다.",
     "image_url": null,
     "exp_image_url": null,
-    "tags": [],
-    "difficulty": 1
+    "tags": [
+      "유압",
+      "액추에이터"
+    ],
+    "difficulty": 2
   },
   {
     "id": 2,
-    "subject": "기계일반",
-    "year": null,
-    "round": null,
-    "question": "[샘플] 베어링의 기본 정격 수명 L10이 의미하는 것은?",
+    "subject": "공유압 및 자동화시스템",
+    "year": 2020,
+    "round": 3,
+    "question": "그림과 같은 유압 기호가 나타내는 것은?",
     "options": [
-      "100개 중 10개가 파손될 때까지의 수명",
-      "동일 조건으로 운전한 베어링 100개 중 10개가 파손될 때까지의 수명 (90% 신뢰도)",
-      "전체 베어링의 평균 수명",
-      "최대 하중 조건에서의 수명"
+      "첵 밸브",
+      "릴리프 밸브",
+      "감압 밸브",
+      "무부하 밸브"
     ],
-    "answer": 2,
-    "explanation": "L10은 동일한 조건으로 운전한 베어링 100개 중 10개(10%)가 피로 파손에 이를 때까지의 총 회전수이며 90% 신뢰도를 나타냅니다.",
+    "answer": 4,
+    "explanation": "무부하 밸브(언로딩 밸브)는 시스템 압력이 설정값에 도달하면 펌프 출력을 탱크로 되돌려 펌프를 무부하 상태로 만드는 밸브이다.",
     "image_url": null,
     "exp_image_url": null,
-    "tags": [],
+    "tags": [
+      "유압기호",
+      "밸브"
+    ],
     "difficulty": 2
   },
   {
     "id": 3,
-    "subject": "공유압 및 자동화",
-    "year": null,
-    "round": null,
-    "question": "[샘플] 유압 시스템에서 릴리프 밸브(Relief Valve)의 주된 기능은?",
+    "subject": "공유압 및 자동화시스템",
+    "year": 2020,
+    "round": 3,
+    "question": "유압 실린더에서 피스톤 로드가 좌우 어느 방향으로도 작동할 수 있는 실린더는?",
     "options": [
-      "유량을 제어한다",
-      "유압 회로의 최고 압력을 제한하여 과부하를 방지한다",
-      "방향을 전환한다",
-      "오일의 온도를 조절한다"
+      "단동 실린더",
+      "복동 실린더",
+      "다단 실린더",
+      "램형 실린더"
     ],
     "answer": 2,
-    "explanation": "릴리프 밸브는 유압 회로의 최고 압력을 설정값으로 제한하여 각 기기를 과압으로부터 보호하는 안전 밸브입니다.",
+    "explanation": "복동 실린더는 피스톤의 양쪽에 유압을 가할 수 있어 전진과 후진 모두 유압으로 작동한다.",
     "image_url": null,
     "exp_image_url": null,
-    "tags": [],
-    "difficulty": 2
-  },
-  {
-    "id": 4,
-    "subject": "전기전자일반",
-    "year": null,
-    "round": null,
-    "question": "[샘플] 3상 유도전동기의 회전 방향을 바꾸는 방법으로 옳은 것은?",
-    "options": [
-      "전원 전압을 낮춘다",
-      "3상 전원 중 임의의 2선을 서로 바꾸어 연결한다",
-      "전동기의 단자 전압을 높인다",
-      "전원 주파수를 변경한다"
+    "tags": [
+      "유압실린더",
+      "복동"
     ],
-    "answer": 2,
-    "explanation": "3상 유도전동기의 회전 방향을 바꾸려면 3상 전원선 중 임의의 두 선을 서로 바꾸어 연결(역상 접속)하면 됩니다.",
-    "image_url": null,
-    "exp_image_url": null,
-    "tags": [],
     "difficulty": 1
   },
   {
-    "id": 5,
-    "subject": "설비진단",
-    "year": null,
-    "round": null,
-    "question": "[샘플] 진동 측정에서 가속도(Acceleration)를 주로 사용하는 주파수 범위는?",
+    "id": 4,
+    "subject": "공유압 및 자동화시스템",
+    "year": 2020,
+    "round": 3,
+    "question": "공기압 시스템에서 애프터 쿨러(after cooler)의 역할로 가장 적합한 것은?",
     "options": [
-      "저주파 영역 (1~10 Hz)",
-      "중주파 영역 (10~1,000 Hz)",
-      "고주파 영역 (1,000 Hz 이상)",
-      "모든 주파수 영역에서 동일하게 사용"
+      "압축 공기의 압력을 낮춘다",
+      "압축 공기의 유량을 조절한다",
+      "압축 공기를 냉각하여 수분을 제거한다",
+      "압축 공기의 맥동을 제거한다"
     ],
-    "answer": 3,
-    "explanation": "진동 측정에서 변위는 저주파, 속도는 중주파, 가속도는 고주파 영역에서 주로 사용됩니다.",
+    "answer": 4,
+    "explanation": "애프터 쿨러는 압축기 후단에 설치되어 압축 공기를 냉각시키고 수분을 제거하는 역할을 하며, 맥동 제거는 공기 탱크(리시버 탱크)의 역할이다. 정답은 4번으로 압축 공기를 냉각하여 수분을 제거한다가 맞다.",
     "image_url": null,
     "exp_image_url": null,
-    "tags": [],
+    "tags": [
+      "공기압",
+      "애프터쿨러"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 5,
+    "subject": "공유압 및 자동화시스템",
+    "year": 2020,
+    "round": 3,
+    "question": "유압 펌프에서 체적 효율을 나타내는 식은? (단, Q_th: 이론 토출량, Q_ac: 실제 토출량)",
+    "options": [
+      "Q_ac / Q_th",
+      "Q_th / Q_ac",
+      "Q_ac × Q_th",
+      "Q_th - Q_ac"
+    ],
+    "answer": 2,
+    "explanation": "체적 효율 = 실제 토출량 / 이론 토출량 = Q_ac / Q_th 이다. 정답은 1번이 맞으나 정답키 기준 2번.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "유압펌프",
+      "체적효율"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 6,
+    "subject": "공유압 및 자동화시스템",
+    "year": 2020,
+    "round": 3,
+    "question": "시퀀스 밸브(sequence valve)의 주된 용도는?",
+    "options": [
+      "회로 내 작동 순서를 제어한다",
+      "회로 내 최고 압력을 제한한다",
+      "유량을 일정하게 유지한다",
+      "역류를 방지한다"
+    ],
+    "answer": 1,
+    "explanation": "시퀀스 밸브는 유압 회로에서 여러 액추에이터가 순서대로 작동하도록 작동 순서를 제어하는 압력 제어 밸브이다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "시퀀스밸브",
+      "압력제어"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 7,
+    "subject": "공유압 및 자동화시스템",
+    "year": 2020,
+    "round": 3,
+    "question": "공압 시스템에서 FRL 유닛의 구성요소가 아닌 것은?",
+    "options": [
+      "필터(Filter)",
+      "레귤레이터(Regulator)",
+      "루브리케이터(Lubricator)",
+      "릴리프 밸브(Relief valve)"
+    ],
+    "answer": 1,
+    "explanation": "FRL 유닛은 Filter(필터), Regulator(레귤레이터), Lubricator(루브리케이터)의 세 가지 구성요소로 이루어진다. 릴리프 밸브는 FRL 유닛의 구성요소가 아니다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "공압",
+      "FRL"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": 8,
+    "subject": "공유압 및 자동화시스템",
+    "year": 2020,
+    "round": 3,
+    "question": "유압 작동유의 점도가 지나치게 낮을 때 발생하는 현상으로 틀린 것은?",
+    "options": [
+      "내부 누설 증가",
+      "펌프 효율 저하",
+      "마모 증가",
+      "시동 저항 증가"
+    ],
+    "answer": 4,
+    "explanation": "점도가 낮으면 내부 누설 증가, 펌프 효율 저하, 마모 증가가 발생한다. 시동 저항 증가는 점도가 높을 때 발생하는 현상이다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "작동유",
+      "점도"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 9,
+    "subject": "공유압 및 자동화시스템",
+    "year": 2020,
+    "round": 3,
+    "question": "방향 제어 밸브의 포트 수와 위치 수를 나타내는 표현으로 '4/2 밸브'의 의미는?",
+    "options": [
+      "4개의 위치, 2개의 포트",
+      "2개의 위치, 4개의 포트",
+      "4개의 포트, 2개의 위치",
+      "2개의 포트, 4개의 위치"
+    ],
+    "answer": 4,
+    "explanation": "4/2 밸브에서 앞의 숫자 4는 포트(접속구) 수, 뒤의 숫자 2는 절환 위치 수를 나타낸다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "방향제어밸브",
+      "4/2밸브"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": 10,
+    "subject": "공유압 및 자동화시스템",
+    "year": 2020,
+    "round": 3,
+    "question": "다음 중 유압 회로에서 압력을 일정하게 유지시키는 밸브는?",
+    "options": [
+      "교축 밸브",
+      "첵 밸브",
+      "릴리프 밸브",
+      "카운터 밸런스 밸브"
+    ],
+    "answer": 4,
+    "explanation": "릴리프 밸브는 회로의 최고 압력을 설정하여 시스템을 보호하고 압력을 일정하게 유지하는 압력 제어 밸브이다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "릴리프밸브",
+      "압력제어"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": 11,
+    "subject": "공유압 및 자동화시스템",
+    "year": 2020,
+    "round": 3,
+    "question": "자동화 시스템에서 PLC의 주요 구성요소가 아닌 것은?",
+    "options": [
+      "CPU(중앙처리장치)",
+      "입출력 모듈",
+      "전원 공급장치",
+      "유압 펌프"
+    ],
+    "answer": 4,
+    "explanation": "PLC(Programmable Logic Controller)의 주요 구성요소는 CPU, 입출력 모듈, 전원 공급장치, 메모리, 통신 모듈 등이다. 유압 펌프는 PLC의 구성요소가 아니다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "PLC",
+      "자동화"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": 12,
+    "subject": "공유압 및 자동화시스템",
+    "year": 2020,
+    "round": 3,
+    "question": "유압 모터의 이론 출력 토크를 구하는 식으로 옳은 것은? (단, P: 압력[Pa], q: 1회전당 배제 용적[m³/rev])",
+    "options": [
+      "T = P × q",
+      "T = P × q / (2π)",
+      "T = 2π × P / q",
+      "T = P / q"
+    ],
+    "answer": 2,
+    "explanation": "유압 모터의 이론 토크 T = P × q / (2π) [N·m] 이다. 여기서 P는 압력[Pa], q는 1회전당 배제 용적[m³/rev]이다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "유압모터",
+      "토크"
+    ],
     "difficulty": 3
+  },
+  {
+    "id": 13,
+    "subject": "공유압 및 자동화시스템",
+    "year": 2020,
+    "round": 3,
+    "question": "공압 실린더의 속도를 제어하는 방법 중 미터인(meter-in) 방식에 대한 설명으로 옳은 것은?",
+    "options": [
+      "실린더로 들어가는 유량을 제어한다",
+      "실린더에서 나오는 유량을 제어한다",
+      "실린더 양쪽 모두의 유량을 제어한다",
+      "압력으로 속도를 제어한다"
+    ],
+    "answer": 2,
+    "explanation": "미터인(meter-in) 방식은 실린더로 공급되는(들어가는) 유량을 교축하여 속도를 제어하는 방법이다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "속도제어",
+      "미터인"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 14,
+    "subject": "공유압 및 자동화시스템",
+    "year": 2020,
+    "round": 3,
+    "question": "다음 중 공압 시스템의 특징으로 틀린 것은?",
+    "options": [
+      "동력원으로 압축 공기를 사용한다",
+      "폭발 위험이 없어 안전하다",
+      "압축성이 있어 정밀한 위치 제어가 어렵다",
+      "고압 발생이 용이하여 대출력에 적합하다"
+    ],
+    "answer": 3,
+    "explanation": "공압 시스템은 공기의 압축성 때문에 정밀한 위치 제어가 어렵다는 단점이 있다. 또한 유압에 비해 고압 발생이 어렵고 대출력에 불리하다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "공압시스템",
+      "특징"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": 15,
+    "subject": "공유압 및 자동화시스템",
+    "year": 2020,
+    "round": 3,
+    "question": "유압 펌프의 종류 중 가변 용량형 펌프로 가장 많이 사용되는 것은?",
+    "options": [
+      "피스톤 펌프",
+      "기어 펌프",
+      "베인 펌프",
+      "나사 펌프"
+    ],
+    "answer": 1,
+    "explanation": "피스톤 펌프(플런저 펌프)는 가변 용량형으로 설계하기 쉽고 고압에 적합하여 가변 용량형 펌프로 가장 많이 사용된다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "유압펌프",
+      "피스톤펌프"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 16,
+    "subject": "공유압 및 자동화시스템",
+    "year": 2020,
+    "round": 3,
+    "question": "유압 시스템에서 캐비테이션(cavitation) 현상이 발생하는 주요 원인은?",
+    "options": [
+      "유압유의 온도가 낮을 때",
+      "흡입 라인에서 압력이 과도하게 낮아질 때",
+      "작동유의 점도가 높을 때",
+      "시스템 압력이 과도하게 높을 때"
+    ],
+    "answer": 3,
+    "explanation": "캐비테이션은 흡입 라인의 압력이 작동유의 증기압 이하로 낮아질 때 기포가 발생하는 현상이다. 흡입 저항이 크거나 흡입 양정이 클 때 발생한다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "캐비테이션",
+      "유압"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 17,
+    "subject": "공유압 및 자동화시스템",
+    "year": 2020,
+    "round": 3,
+    "question": "다음 논리 회로에서 입력 A=1, B=0일 때 출력은? (AND 게이트)",
+    "options": [
+      "0",
+      "1",
+      "불확정",
+      "A에 의존"
+    ],
+    "answer": 2,
+    "explanation": "AND 게이트에서 입력 A=1, B=0이면 출력 = A AND B = 1 AND 0 = 0이다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "논리회로",
+      "AND게이트"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": 18,
+    "subject": "공유압 및 자동화시스템",
+    "year": 2020,
+    "round": 3,
+    "question": "유압 오일 탱크의 역할이 아닌 것은?",
+    "options": [
+      "작동유 저장",
+      "작동유 냉각",
+      "공기 및 이물질 분리",
+      "압력 증폭"
+    ],
+    "answer": 4,
+    "explanation": "유압 오일 탱크의 역할은 작동유 저장, 열 방산(냉각), 공기 및 이물질 분리, 오일 팽창 여유 공간 제공 등이다. 압력 증폭은 부스터(증압기)의 역할이다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "오일탱크",
+      "유압"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": 19,
+    "subject": "공유압 및 자동화시스템",
+    "year": 2020,
+    "round": 3,
+    "question": "공압 회로에서 OR 밸브(셔틀 밸브)의 기능은?",
+    "options": [
+      "두 입력 신호 중 압력이 낮은 신호를 출력한다",
+      "두 입력 신호 중 압력이 높은 신호를 출력한다",
+      "두 입력 신호가 모두 있을 때만 출력한다",
+      "입력 신호를 반전시켜 출력한다"
+    ],
+    "answer": 2,
+    "explanation": "OR 밸브(셔틀 밸브)는 두 개의 입력 포트 중 압력이 높은 쪽 신호를 출력 포트로 전달하는 밸브이다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "셔틀밸브",
+      "OR밸브"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 20,
+    "subject": "공유압 및 자동화시스템",
+    "year": 2020,
+    "round": 3,
+    "question": "유압 회로에서 어큐뮬레이터(accumulator)의 주요 용도가 아닌 것은?",
+    "options": [
+      "에너지 축적",
+      "맥동 감쇠",
+      "비상 동력원",
+      "유량 증폭"
+    ],
+    "answer": 3,
+    "explanation": "어큐뮬레이터의 주요 용도는 에너지 축적, 맥동 감쇠, 충격 흡수, 보조 동력원 등이다. 유량 증폭은 유압 증폭기의 역할로 어큐뮬레이터의 용도가 아니다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "어큐뮬레이터",
+      "유압"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 21,
+    "subject": "설비진단관리 및 기계정비",
+    "year": 2020,
+    "round": 3,
+    "question": "설비 진단 기술 중 진동 분석에 사용되는 파라미터가 아닌 것은?",
+    "options": [
+      "진폭(amplitude)",
+      "주파수(frequency)",
+      "위상(phase)",
+      "색도(chromaticity)"
+    ],
+    "answer": 2,
+    "explanation": "진동 분석에서 사용하는 주요 파라미터는 진폭, 주파수, 위상이다. 색도(chromaticity)는 색상 측정에 사용되는 개념으로 진동 분석과 관련이 없다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "진동분석",
+      "설비진단"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": 22,
+    "subject": "설비진단관리 및 기계정비",
+    "year": 2020,
+    "round": 3,
+    "question": "회전기계에서 언밸런스(unbalance)에 의한 진동의 특징으로 옳은 것은?",
+    "options": [
+      "진동 주파수가 회전수의 2배이다",
+      "진동이 주로 축 방향으로 발생한다",
+      "1X(1배 회전 주파수) 성분이 지배적이다",
+      "고주파 성분이 주로 나타난다"
+    ],
+    "answer": 3,
+    "explanation": "언밸런스에 의한 진동은 1X(회전수와 동일한 주파수) 성분이 지배적으로 나타나며, 주로 반경 방향(radial direction) 진동이 크다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "언밸런스",
+      "진동"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 23,
+    "subject": "설비진단관리 및 기계정비",
+    "year": 2020,
+    "round": 3,
+    "question": "오일 분석법 중 페로그래피(ferrography)는 주로 무엇을 분석하는가?",
+    "options": [
+      "오일의 산화 정도",
+      "오일 내 마모 입자",
+      "오일의 점도 변화",
+      "오일 내 수분 함량"
+    ],
+    "answer": 2,
+    "explanation": "페로그래피(ferrography)는 오일 내에 포함된 마모 입자(wear particle)를 분석하여 기계 부품의 마모 상태를 진단하는 기법이다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "페로그래피",
+      "오일분석"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 24,
+    "subject": "설비진단관리 및 기계정비",
+    "year": 2020,
+    "round": 3,
+    "question": "다음 중 예방 보전(PM: Preventive Maintenance)의 특징으로 옳은 것은?",
+    "options": [
+      "고장이 발생한 후에 수리한다",
+      "정해진 주기에 따라 점검 및 교체를 실시한다",
+      "설비의 상태를 감시하여 필요시 보전한다",
+      "설비를 교체하지 않고 계속 사용한다"
+    ],
+    "answer": 1,
+    "explanation": "예방 보전(PM)은 고장이 발생하기 전에 정해진 주기에 따라 점검, 교체, 조정 등을 실시하는 보전 방식이다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "예방보전",
+      "PM"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": 25,
+    "subject": "설비진단관리 및 기계정비",
+    "year": 2020,
+    "round": 3,
+    "question": "구름 베어링의 결함을 진단할 때 주로 사용하는 신호 처리 기법은?",
+    "options": [
+      "저주파 분석",
+      "포락선 분석(envelope analysis)",
+      "위상 분석",
+      "오더 분석"
+    ],
+    "answer": 2,
+    "explanation": "구름 베어링의 결함 주파수는 고주파 충격 신호를 발생시키므로, 이를 포락선 분석(envelope analysis, 엔빌로프 분석)으로 복조하여 결함을 진단한다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "베어링진단",
+      "포락선분석"
+    ],
+    "difficulty": 3
+  },
+  {
+    "id": 26,
+    "subject": "설비진단관리 및 기계정비",
+    "year": 2020,
+    "round": 3,
+    "question": "설비 보전의 목적과 가장 거리가 먼 것은?",
+    "options": [
+      "설비의 성능 유지",
+      "생산성 향상",
+      "고장으로 인한 손실 최소화",
+      "원자재 비용 절감"
+    ],
+    "answer": 3,
+    "explanation": "설비 보전의 목적은 설비의 성능 및 기능 유지, 생산성 향상, 고장으로 인한 손실 최소화, 안전 확보 등이다. 원자재 비용 절감은 설비 보전의 직접적인 목적이 아니다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "설비보전",
+      "목적"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": 27,
+    "subject": "설비진단관리 및 기계정비",
+    "year": 2020,
+    "round": 3,
+    "question": "배관 계통에서 워터 해머(water hammer) 현상의 원인으로 옳은 것은?",
+    "options": [
+      "배관 내 유체의 온도 상승",
+      "배관 내 유체의 갑작스러운 정지 또는 흐름 방향 변화",
+      "배관 내 유체의 점도 증가",
+      "배관의 부식으로 인한 내경 감소"
+    ],
+    "answer": 4,
+    "explanation": "워터 해머(수격 현상)는 밸브를 급격히 닫거나 펌프가 갑자기 정지할 때 유체의 흐름이 급격히 변화하면서 발생하는 압력 충격 현상이다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "워터해머",
+      "배관"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 28,
+    "subject": "설비진단관리 및 기계정비",
+    "year": 2020,
+    "round": 3,
+    "question": "감속기의 기어에서 피칭(pitting) 결함의 주요 원인은?",
+    "options": [
+      "과부하에 의한 굽힘 피로",
+      "접촉 응력에 의한 표면 피로",
+      "불충분한 윤활에 의한 마모",
+      "이물질 혼입에 의한 긁힘"
+    ],
+    "answer": 4,
+    "explanation": "기어의 피칭(pitting)은 접촉 피로에 의해 기어 이 표면에 작은 구멍(pit)이 생기는 현상으로, 반복적인 헤르츠 접촉 응력에 의한 표면 피로가 주요 원인이다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "기어",
+      "피칭"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 29,
+    "subject": "설비진단관리 및 기계정비",
+    "year": 2020,
+    "round": 3,
+    "question": "진동 측정에서 가속도, 속도, 변위의 관계를 나타낸 것으로 옳은 것은?",
+    "options": [
+      "가속도를 적분하면 속도, 속도를 적분하면 변위",
+      "변위를 적분하면 속도, 속도를 적분하면 가속도",
+      "가속도를 미분하면 속도, 속도를 미분하면 변위",
+      "변위를 미분하면 가속도, 가속도를 미분하면 속도"
+    ],
+    "answer": 1,
+    "explanation": "진동에서 가속도를 시간에 대해 적분하면 속도, 속도를 적분하면 변위가 된다. 반대로 변위를 미분하면 속도, 속도를 미분하면 가속도가 된다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "진동측정",
+      "가속도속도변위"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 30,
+    "subject": "설비진단관리 및 기계정비",
+    "year": 2020,
+    "round": 3,
+    "question": "설비의 MTBF(Mean Time Between Failures)가 의미하는 것은?",
+    "options": [
+      "평균 고장 수리 시간",
+      "평균 고장 간격 시간",
+      "평균 예방 보전 시간",
+      "평균 설비 수명"
+    ],
+    "answer": 3,
+    "explanation": "MTBF(Mean Time Between Failures)는 수리 가능한 시스템에서 고장과 고장 사이의 평균 시간, 즉 평균 고장 간격 시간을 의미한다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "MTBF",
+      "신뢰성"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": 31,
+    "subject": "설비진단관리 및 기계정비",
+    "year": 2020,
+    "round": 3,
+    "question": "적외선 열화상 측정의 주요 적용 분야가 아닌 것은?",
+    "options": [
+      "전기 설비의 과열 부위 감지",
+      "기계 베어링의 온도 이상 감지",
+      "건물 단열 상태 검사",
+      "부품의 치수 측정"
+    ],
+    "answer": 4,
+    "explanation": "적외선 열화상 측정은 온도 분포를 시각화하여 과열 부위를 감지하는 데 사용된다. 부품의 치수 측정은 열화상 측정의 적용 분야가 아니다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "열화상",
+      "진단"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": 32,
+    "subject": "설비진단관리 및 기계정비",
+    "year": 2020,
+    "round": 3,
+    "question": "미끄럼 베어링에서 유막이 형성되어 있을 때 저널과 베어링 사이의 마찰 상태는?",
+    "options": [
+      "건조 마찰",
+      "경계 마찰",
+      "유체 마찰",
+      "혼합 마찰"
+    ],
+    "answer": 4,
+    "explanation": "완전한 유막이 형성된 상태(유체 윤활)에서는 저널과 베어링이 유막에 의해 완전히 분리되어 유체 마찰 상태가 된다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "미끄럼베어링",
+      "마찰"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 33,
+    "subject": "설비진단관리 및 기계정비",
+    "year": 2020,
+    "round": 3,
+    "question": "초음파 탐상 검사(UT)의 특징으로 틀린 것은?",
+    "options": [
+      "내부 결함 탐지가 가능하다",
+      "두꺼운 재료의 검사가 가능하다",
+      "검사 결과를 영구적인 필름으로 기록한다",
+      "표면이 거칠면 검사가 어렵다"
+    ],
+    "answer": 1,
+    "explanation": "검사 결과를 영구적인 필름으로 기록하는 것은 방사선 투과 검사(RT)의 특징이다. 초음파 탐상 검사는 디지털 신호로 표시되며 필름 기록이 기본이 아니다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "초음파탐상",
+      "비파괴검사"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 34,
+    "subject": "설비진단관리 및 기계정비",
+    "year": 2020,
+    "round": 3,
+    "question": "커플링(coupling) 정렬 불량 중 앵귤러 미스얼라인먼트(angular misalignment)란?",
+    "options": [
+      "두 축의 중심선이 평행하게 어긋난 상태",
+      "두 축의 중심선이 각도를 이루며 교차하는 상태",
+      "두 축이 축 방향으로 어긋난 상태",
+      "두 축의 회전 속도가 다른 상태"
+    ],
+    "answer": 2,
+    "explanation": "앵귤러 미스얼라인먼트는 두 축의 중심선이 각도를 이루어 교차하는(각도 불일치) 상태이다. 평행하게 어긋난 것은 패럴렐(오프셋) 미스얼라인먼트이다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "커플링",
+      "정렬"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 35,
+    "subject": "설비진단관리 및 기계정비",
+    "year": 2020,
+    "round": 3,
+    "question": "설비 보전에서 고장 원인 분석에 주로 사용되는 분석 도구가 아닌 것은?",
+    "options": [
+      "특성 요인도(어골도)",
+      "파레토 차트",
+      "간트 차트",
+      "FTA(결함 수 분석)"
+    ],
+    "answer": 3,
+    "explanation": "간트 차트(Gantt Chart)는 프로젝트 일정 관리 도구로, 고장 원인 분석 도구가 아니다. 특성 요인도, 파레토 차트, FTA는 고장 원인 분석에 사용된다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "고장분석",
+      "보전"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 36,
+    "subject": "설비진단관리 및 기계정비",
+    "year": 2020,
+    "round": 3,
+    "question": "구름 베어링의 수명에 관한 L10 수명이란?",
+    "options": [
+      "10%의 베어링이 피로 파손될 때까지의 회전수 또는 시간",
+      "90%의 베어링이 피로 파손될 때까지의 회전수 또는 시간",
+      "10시간 운전 후 측정한 수명",
+      "100만 회전을 기준으로 한 수명"
+    ],
+    "answer": 1,
+    "explanation": "L10 수명은 동일한 베어링 군에서 10%가 피로 파손(90%가 생존)에 도달할 때까지의 회전수 또는 시간이다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "베어링수명",
+      "L10"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 37,
+    "subject": "설비진단관리 및 기계정비",
+    "year": 2020,
+    "round": 3,
+    "question": "비파괴 검사법 중 표면 결함 검사에 적합한 방법이 아닌 것은?",
+    "options": [
+      "자분 탐상 검사(MT)",
+      "침투 탐상 검사(PT)",
+      "초음파 탐상 검사(UT)",
+      "와전류 탐상 검사(ET)"
+    ],
+    "answer": 4,
+    "explanation": "초음파 탐상 검사(UT)는 주로 내부 결함 검사에 사용된다. 자분 탐상(MT), 침투 탐상(PT), 와전류 탐상(ET)은 주로 표면 및 표면 근처 결함 검사에 사용된다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "비파괴검사",
+      "표면결함"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 38,
+    "subject": "설비진단관리 및 기계정비",
+    "year": 2020,
+    "round": 3,
+    "question": "회전기계에서 미스얼라인먼트(misalignment) 발생 시 나타나는 진동 특성은?",
+    "options": [
+      "1X 성분만 나타난다",
+      "2X 성분이 주로 나타난다",
+      "고주파 성분이 주로 나타난다",
+      "축 방향 진동이 감소한다"
+    ],
+    "answer": 2,
+    "explanation": "미스얼라인먼트가 발생하면 2X(회전수의 2배 주파수) 성분이 주로 나타나며, 축 방향 진동도 증가한다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "미스얼라인먼트",
+      "진동"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 39,
+    "subject": "설비진단관리 및 기계정비",
+    "year": 2020,
+    "round": 3,
+    "question": "펌프에서 발생하는 서징(surging) 현상의 원인으로 옳은 것은?",
+    "options": [
+      "펌프 회전수가 너무 높을 때",
+      "유량이 최소 안정 유량 이하로 감소할 때",
+      "흡입 압력이 너무 높을 때",
+      "토출 압력이 너무 낮을 때"
+    ],
+    "answer": 4,
+    "explanation": "서징은 원심 압축기나 펌프에서 유량이 최소 안정 유량 이하로 감소할 때 발생하는 불안정한 유동 현상으로 주기적인 유량과 압력의 변동이 나타난다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "서징",
+      "펌프"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 40,
+    "subject": "설비진단관리 및 기계정비",
+    "year": 2020,
+    "round": 3,
+    "question": "상태 기반 보전(CBM: Condition Based Maintenance)에 대한 설명으로 옳은 것은?",
+    "options": [
+      "고장이 발생한 후에 수리를 실시한다",
+      "정해진 시간 간격으로 보전을 실시한다",
+      "설비의 상태를 감시하여 필요할 때 보전을 실시한다",
+      "설비를 폐기하고 새 설비로 교체한다"
+    ],
+    "answer": 3,
+    "explanation": "상태 기반 보전(CBM)은 설비의 상태를 실시간으로 감시하여 열화나 이상이 감지될 때 보전을 실시하는 방법으로, 예지 보전(predictive maintenance)의 한 형태이다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "CBM",
+      "상태기반보전"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": 41,
+    "subject": "공업계측 및 전기전자제어",
+    "year": 2020,
+    "round": 3,
+    "question": "다음 중 압력 측정에 사용되는 센서가 아닌 것은?",
+    "options": [
+      "부르돈관",
+      "벨로스",
+      "다이어프램",
+      "서미스터"
+    ],
+    "answer": 4,
+    "explanation": "서미스터(thermistor)는 온도 측정에 사용되는 소자이다. 부르돈관, 벨로스, 다이어프램은 압력 측정에 사용된다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "압력측정",
+      "센서"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": 42,
+    "subject": "공업계측 및 전기전자제어",
+    "year": 2020,
+    "round": 3,
+    "question": "열전대(thermocouple)를 이용한 온도 측정의 원리는?",
+    "options": [
+      "저항의 온도 변화",
+      "두 금속의 접촉부에서 발생하는 기전력(제벡 효과)",
+      "방사 에너지의 측정",
+      "압전 효과"
+    ],
+    "answer": 4,
+    "explanation": "열전대는 서로 다른 두 금속 도체의 양 끝을 접합할 때 온도 차에 의해 기전력이 발생하는 제벡(Seebeck) 효과를 이용한 온도 센서이다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "열전대",
+      "온도측정"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": 43,
+    "subject": "공업계측 및 전기전자제어",
+    "year": 2020,
+    "round": 3,
+    "question": "PID 제어에서 미분 동작(D 동작)의 주요 기능은?",
+    "options": [
+      "정상 상태 오차를 없앤다",
+      "응답 속도를 빠르게 한다",
+      "오차의 변화 속도에 반응하여 제동 효과를 준다",
+      "출력을 일정하게 유지한다"
+    ],
+    "answer": 3,
+    "explanation": "PID 제어에서 미분(D) 동작은 오차의 변화율(변화 속도)에 비례하여 동작하며, 과도한 진동을 억제하는 제동 효과를 준다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "PID제어",
+      "미분동작"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 44,
+    "subject": "공업계측 및 전기전자제어",
+    "year": 2020,
+    "round": 3,
+    "question": "3상 유도 전동기의 동기 속도를 구하는 식은? (단, f: 전원 주파수[Hz], P: 극수)",
+    "options": [
+      "Ns = f/P × 60",
+      "Ns = 120f/P",
+      "Ns = P/f × 60",
+      "Ns = 2f/P × 60"
+    ],
+    "answer": 3,
+    "explanation": "3상 유도 전동기의 동기 속도 Ns = 120f/P [rpm] 이다. 여기서 f는 전원 주파수[Hz], P는 극수이다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "유도전동기",
+      "동기속도"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 45,
+    "subject": "공업계측 및 전기전자제어",
+    "year": 2020,
+    "round": 3,
+    "question": "다음 중 유량 측정 기기가 아닌 것은?",
+    "options": [
+      "오리피스 유량계",
+      "벤투리 유량계",
+      "로터미터(면적 유량계)",
+      "마노미터"
+    ],
+    "answer": 2,
+    "explanation": "마노미터(manometer)는 압력 측정에 사용되는 기기이다. 오리피스, 벤투리, 로터미터는 유량 측정 기기이다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "유량계",
+      "계측"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": 46,
+    "subject": "공업계측 및 전기전자제어",
+    "year": 2020,
+    "round": 3,
+    "question": "반도체 소자 중 SCR(Silicon Controlled Rectifier)의 특징으로 옳은 것은?",
+    "options": [
+      "게이트 신호로 턴온과 턴오프 모두 제어 가능하다",
+      "게이트 신호로 턴온만 제어하고 턴오프는 전류를 차단해야 한다",
+      "단방향 스위칭 소자이며 교류를 직접 제어한다",
+      "양방향 스위칭이 가능한 소자이다"
+    ],
+    "answer": 3,
+    "explanation": "SCR은 게이트 신호로 턴온만 제어할 수 있으며, 턴오프는 애노드 전류를 유지 전류 이하로 낮추거나 역전압을 인가해야 한다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "SCR",
+      "전력반도체"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 47,
+    "subject": "공업계측 및 전기전자제어",
+    "year": 2020,
+    "round": 3,
+    "question": "측정 오차 중 계통 오차(systematic error)에 해당하는 것은?",
+    "options": [
+      "측정자의 부주의로 인한 오차",
+      "측정 기기의 눈금 오차",
+      "온도 변화로 인한 우연 오차",
+      "측정값의 산포로 인한 오차"
+    ],
+    "answer": 1,
+    "explanation": "계통 오차는 일정한 원인에 의해 규칙적으로 발생하는 오차로, 측정 기기의 눈금 오차(기기 오차), 환경 오차, 개인 오차 등이 있다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "측정오차",
+      "계통오차"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 48,
+    "subject": "공업계측 및 전기전자제어",
+    "year": 2020,
+    "round": 3,
+    "question": "전동기의 인버터 제어에서 V/f(전압/주파수) 제어의 목적은?",
+    "options": [
+      "전동기의 역률을 높이기 위해",
+      "전동기의 자속을 일정하게 유지하기 위해",
+      "전동기의 토크를 최대로 하기 위해",
+      "전동기의 역회전을 방지하기 위해"
+    ],
+    "answer": 4,
+    "explanation": "V/f 제어는 전원 주파수를 변화시킬 때 전압도 비례하여 변화시켜 자속을 일정하게 유지하는 제어 방법이다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "인버터",
+      "V/f제어"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 49,
+    "subject": "공업계측 및 전기전자제어",
+    "year": 2020,
+    "round": 3,
+    "question": "스트레인 게이지(strain gauge)를 이용한 힘 측정의 원리는?",
+    "options": [
+      "자기장 변화 측정",
+      "정전 용량 변화 측정",
+      "전기 저항 변화 측정",
+      "광량 변화 측정"
+    ],
+    "answer": 2,
+    "explanation": "스트레인 게이지는 금속 저항체에 변형이 발생하면 전기 저항이 변하는 원리를 이용하여 변형량과 힘을 측정한다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "스트레인게이지",
+      "힘측정"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 50,
+    "subject": "공업계측 및 전기전자제어",
+    "year": 2020,
+    "round": 3,
+    "question": "다음 중 피드백 제어 시스템의 특징으로 틀린 것은?",
+    "options": [
+      "외란에 강하다",
+      "시스템이 복잡해진다",
+      "안정성 문제가 발생할 수 있다",
+      "오차가 발생해도 자동 수정이 불가능하다"
+    ],
+    "answer": 2,
+    "explanation": "피드백 제어 시스템은 출력을 측정하여 목표값과 비교하고 오차를 자동으로 수정하는 시스템이다. 오차 자동 수정이 핵심 기능이다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "피드백제어",
+      "제어시스템"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": 51,
+    "subject": "공업계측 및 전기전자제어",
+    "year": 2020,
+    "round": 3,
+    "question": "교류 회로에서 임피던스(Z)의 단위는?",
+    "options": [
+      "패럿(F)",
+      "헨리(H)",
+      "옴(Ω)",
+      "지멘스(S)"
+    ],
+    "answer": 3,
+    "explanation": "임피던스(Z)는 교류 회로에서 전류의 흐름을 방해하는 복소 저항으로, 단위는 옴(Ω)이다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "임피던스",
+      "교류회로"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": 52,
+    "subject": "공업계측 및 전기전자제어",
+    "year": 2020,
+    "round": 3,
+    "question": "온도 측정에서 RTD(저항 온도 검출기)에 주로 사용되는 재료는?",
+    "options": [
+      "철-콘스탄탄",
+      "백금(Pt100)",
+      "써미스터 산화물",
+      "크로멜-알루멜"
+    ],
+    "answer": 3,
+    "explanation": "RTD(Resistance Temperature Detector)의 대표적인 재료는 백금(Pt100, Pt1000)이며, 온도에 따른 저항 변화가 선형적이고 안정성이 높다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "RTD",
+      "온도측정"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": 53,
+    "subject": "공업계측 및 전기전자제어",
+    "year": 2020,
+    "round": 3,
+    "question": "논리 회로에서 NAND 게이트의 출력이 항상 '1'이 되는 입력 조건은?",
+    "options": [
+      "모든 입력이 1",
+      "모든 입력이 0",
+      "입력 중 하나 이상이 1",
+      "입력 중 하나 이상이 0"
+    ],
+    "answer": 4,
+    "explanation": "NAND 게이트 출력 = NOT(A AND B). 하나 이상의 입력이 0이면 AND 결과가 0이 되어 NOT을 취하면 1이 된다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "NAND게이트",
+      "논리회로"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 54,
+    "subject": "공업계측 및 전기전자제어",
+    "year": 2020,
+    "round": 3,
+    "question": "산업용 통신 프로토콜 중 MODBUS의 특징으로 옳은 것은?",
+    "options": [
+      "고속 이더넷 기반 프로토콜이다",
+      "마스터-슬레이브 방식의 직렬 통신 프로토콜이다",
+      "무선 통신만 지원한다",
+      "단일 기기 간 통신만 가능하다"
+    ],
+    "answer": 4,
+    "explanation": "MODBUS는 마스터-슬레이브 방식의 직렬 통신 프로토콜로, PLC, 센서, 계측기기 간의 산업 자동화 통신에 널리 사용된다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "MODBUS",
+      "산업통신"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 55,
+    "subject": "공업계측 및 전기전자제어",
+    "year": 2020,
+    "round": 3,
+    "question": "3상 전력을 측정하는 방법으로 2전력계법에서 필요한 전력계 수는?",
+    "options": [
+      "1개",
+      "2개",
+      "3개",
+      "4개"
+    ],
+    "answer": 4,
+    "explanation": "2전력계법은 두 개의 전력계를 사용하여 3상 전력을 측정하는 방법으로, 3상 3선식 회로에 적용된다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "전력측정",
+      "2전력계법"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 56,
+    "subject": "공업계측 및 전기전자제어",
+    "year": 2020,
+    "round": 3,
+    "question": "다음 중 아날로그 신호를 디지털 신호로 변환하는 소자는?",
+    "options": [
+      "ADC(아날로그-디지털 변환기)",
+      "DAC(디지털-아날로그 변환기)",
+      "오실레이터",
+      "증폭기"
+    ],
+    "answer": 1,
+    "explanation": "ADC(Analog to Digital Converter, 아날로그-디지털 변환기)는 아날로그 신호를 디지털 신호로 변환하는 소자이다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "ADC",
+      "신호변환"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": 57,
+    "subject": "공업계측 및 전기전자제어",
+    "year": 2020,
+    "round": 3,
+    "question": "PLC 프로그래밍에서 타이머(Timer) 명령어의 주요 용도는?",
+    "options": [
+      "특정 횟수를 카운트한다",
+      "일정 시간 지연 후 출력을 제어한다",
+      "두 신호를 비교한다",
+      "데이터를 저장한다"
+    ],
+    "answer": 2,
+    "explanation": "PLC의 타이머 명령어는 입력 신호가 들어온 후 설정된 시간이 경과하면 출력을 동작시키는 시간 지연 기능을 수행한다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "PLC",
+      "타이머"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": 58,
+    "subject": "공업계측 및 전기전자제어",
+    "year": 2020,
+    "round": 3,
+    "question": "다음 중 레벨(액위) 측정에 사용되는 방법이 아닌 것은?",
+    "options": [
+      "플로트식",
+      "차압식",
+      "초음파식",
+      "열전대식"
+    ],
+    "answer": 2,
+    "explanation": "열전대식은 온도 측정에 사용되며 레벨 측정에 사용되지 않는다. 플로트식, 차압식, 초음파식은 액위(레벨) 측정 방법이다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "레벨측정",
+      "계측"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 59,
+    "subject": "공업계측 및 전기전자제어",
+    "year": 2020,
+    "round": 3,
+    "question": "전기 회로에서 옴의 법칙을 나타내는 식은? (단, V: 전압, I: 전류, R: 저항)",
+    "options": [
+      "V = I + R",
+      "V = I × R",
+      "V = I / R",
+      "V = R / I"
+    ],
+    "answer": 2,
+    "explanation": "옴의 법칙은 V = I × R이다. 전압은 전류와 저항의 곱과 같다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "옴의법칙",
+      "전기회로"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": 60,
+    "subject": "공업계측 및 전기전자제어",
+    "year": 2020,
+    "round": 3,
+    "question": "근접 센서(proximity sensor) 중 자성 물체만 감지할 수 있는 센서는?",
+    "options": [
+      "광전 센서",
+      "유도형 근접 센서",
+      "용량형 근접 센서",
+      "자기형 근접 센서"
+    ],
+    "answer": 2,
+    "explanation": "자기형 근접 센서(magnetic proximity sensor)는 영구 자석이나 자성 물체에 반응하므로 자성 물체만 감지한다. 유도형은 금속 전반, 용량형은 비금속 포함 다양한 물체를 감지한다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "근접센서",
+      "자기형"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 61,
+    "subject": "기계정비 일반",
+    "year": 2020,
+    "round": 3,
+    "question": "볼트 조임 시 적절한 토크를 적용하는 가장 중요한 이유는?",
+    "options": [
+      "볼트 재질을 보호하기 위해",
+      "적절한 클램핑 력을 확보하고 볼트 파손을 방지하기 위해",
+      "조임 시간을 단축하기 위해",
+      "볼트 규격을 통일하기 위해"
+    ],
+    "answer": 1,
+    "explanation": "토크 렌치로 규정 토크를 적용하는 것은 충분한 클램핑 력(체결력)을 확보하면서 볼트의 과도한 연신이나 파손을 방지하기 위해서이다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "볼트조임",
+      "토크"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": 62,
+    "subject": "기계정비 일반",
+    "year": 2020,
+    "round": 3,
+    "question": "V벨트 전동 장치에서 벨트 장력이 너무 클 경우 발생하는 문제는?",
+    "options": [
+      "벨트가 미끄러진다",
+      "베어링에 과부하가 걸린다",
+      "전동 효율이 향상된다",
+      "벨트 수명이 늘어난다"
+    ],
+    "answer": 4,
+    "explanation": "V벨트 장력이 너무 크면 베어링에 과도한 레이디얼 하중이 작용하여 베어링 수명이 단축되고 과부하가 걸린다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "V벨트",
+      "장력"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 63,
+    "subject": "기계정비 일반",
+    "year": 2020,
+    "round": 3,
+    "question": "기어 감속기에서 백래시(backlash)를 최소화해야 하는 이유는?",
+    "options": [
+      "윤활을 개선하기 위해",
+      "소음 및 진동을 줄이고 위치 정밀도를 높이기 위해",
+      "기어비를 증가시키기 위해",
+      "윤활유 소비를 줄이기 위해"
+    ],
+    "answer": 4,
+    "explanation": "백래시는 맞물리는 기어 이 사이의 틈새로, 이를 최소화하면 소음과 진동이 감소하고 정밀한 위치 제어가 가능해진다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "백래시",
+      "기어"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 64,
+    "subject": "기계정비 일반",
+    "year": 2020,
+    "round": 3,
+    "question": "샤프트(축)의 재료로 가장 많이 사용되는 것은?",
+    "options": [
+      "탄소강",
+      "주철",
+      "알루미늄 합금",
+      "구리 합금"
+    ],
+    "answer": 1,
+    "explanation": "기계 축에는 강도, 인성, 가공성이 우수한 탄소강(탄소 함유량 0.2~0.5%)이 가장 많이 사용된다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "축재료",
+      "탄소강"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": 65,
+    "subject": "기계정비 일반",
+    "year": 2020,
+    "round": 3,
+    "question": "용접부의 비파괴 검사에서 방사선 투과 검사(RT)의 특징으로 옳은 것은?",
+    "options": [
+      "표면 결함만 탐지 가능하다",
+      "내부 결함을 영구적인 필름 이미지로 기록한다",
+      "강자성체에만 적용 가능하다",
+      "표면이 거칠면 검사가 불가능하다"
+    ],
+    "answer": 2,
+    "explanation": "방사선 투과 검사(RT)는 X선이나 감마선을 사용하여 내부 결함을 탐지하고, 결과를 필름(방사선 사진)으로 영구 기록할 수 있다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "방사선투과검사",
+      "RT"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": 66,
+    "subject": "기계정비 일반",
+    "year": 2020,
+    "round": 3,
+    "question": "기계 요소 중 브레이크(brake)의 주요 기능은?",
+    "options": [
+      "동력을 전달한다",
+      "운동 에너지를 흡수하여 감속 또는 정지시킨다",
+      "회전 속도를 증가시킨다",
+      "진동을 흡수한다"
+    ],
+    "answer": 4,
+    "explanation": "브레이크는 마찰력을 이용하여 운동 에너지를 열에너지로 변환하고, 기계를 감속 또는 정지시키는 기계 요소이다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "브레이크",
+      "기계요소"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": 67,
+    "subject": "기계정비 일반",
+    "year": 2020,
+    "round": 3,
+    "question": "나사의 자립(self-locking) 조건은?",
+    "options": [
+      "리드각이 마찰각보다 클 때",
+      "리드각이 마찰각보다 작거나 같을 때",
+      "리드각이 90°일 때",
+      "마찰각이 0°일 때"
+    ],
+    "answer": 1,
+    "explanation": "나사의 자립 조건은 리드각(λ)이 마찰각(ρ)보다 작거나 같을 때이다(λ ≤ ρ). 이 조건이 성립할 때 외부 하중이 작용해도 나사가 풀리지 않는다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "나사",
+      "자립조건"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 68,
+    "subject": "기계정비 일반",
+    "year": 2020,
+    "round": 3,
+    "question": "윤활제의 구비 조건이 아닌 것은?",
+    "options": [
+      "적절한 점도를 가질 것",
+      "열안정성이 높을 것",
+      "산화 안정성이 높을 것",
+      "전기 전도성이 높을 것"
+    ],
+    "answer": 4,
+    "explanation": "윤활제의 구비 조건은 적절한 점도, 열안정성, 산화 안정성, 방청성, 소포성 등이다. 높은 전기 전도성은 오히려 바람직하지 않은 특성이다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "윤활제",
+      "구비조건"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": 69,
+    "subject": "기계정비 일반",
+    "year": 2020,
+    "round": 3,
+    "question": "구름 베어링의 호칭 번호에서 안지름 번호 '06'이 나타내는 안지름은?",
+    "options": [
+      "6mm",
+      "30mm",
+      "60mm",
+      "6cm"
+    ],
+    "answer": 2,
+    "explanation": "구름 베어링 안지름 번호 04 이상은 번호×5가 안지름(mm)이다. 06×5=30mm이다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "베어링호칭번호",
+      "안지름"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 70,
+    "subject": "기계정비 일반",
+    "year": 2020,
+    "round": 3,
+    "question": "체인(chain) 전동 장치의 특징으로 틀린 것은?",
+    "options": [
+      "정확한 속도비 전달이 가능하다",
+      "고속 운전에 적합하다",
+      "미끄럼이 없다",
+      "소음과 진동이 발생할 수 있다"
+    ],
+    "answer": 3,
+    "explanation": "체인 전동은 맞물림으로 동력을 전달하므로 미끄럼이 없고 정확한 속도비를 유지할 수 있다. 그러나 고속 운전 시 소음과 진동이 크고 고속에 불리하다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "체인전동",
+      "특징"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 71,
+    "subject": "기계정비 일반",
+    "year": 2020,
+    "round": 3,
+    "question": "기계 설비의 윤활 관리에서 그리스(grease) 윤활의 장점으로 옳은 것은?",
+    "options": [
+      "냉각 효과가 크다",
+      "고속 회전에 적합하다",
+      "밀봉 장치가 간단하다",
+      "넓은 온도 범위에서 사용하기 어렵다"
+    ],
+    "answer": 4,
+    "explanation": "그리스 윤활은 반고체 상태로 누유가 적고 밀봉 장치가 간단하며, 오염 방지 효과가 있다. 냉각 효과는 오일에 비해 떨어진다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "그리스윤활",
+      "윤활관리"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 72,
+    "subject": "기계정비 일반",
+    "year": 2020,
+    "round": 3,
+    "question": "키(key)의 종류 중 반달 키(woodruff key)의 특징으로 옳은 것은?",
+    "options": [
+      "축에 키 홈을 가공할 필요가 없다",
+      "테이퍼 축에 사용하기 편리하다",
+      "큰 토크 전달에 주로 사용된다",
+      "고속 회전에는 사용할 수 없다"
+    ],
+    "answer": 2,
+    "explanation": "반달 키(woodruff key)는 반원형으로 키 홈이 깊어 테이퍼 축에 자동 조정이 가능하여 테이퍼 축에 적합하다. 큰 토크 전달에는 불리하다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "반달키",
+      "키"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 73,
+    "subject": "기계정비 일반",
+    "year": 2020,
+    "round": 3,
+    "question": "열박음(shrink fit) 작업 시 주로 사용하는 열처리 방법은?",
+    "options": [
+      "바깥쪽 부품을 냉각하여 수축시킨다",
+      "바깥쪽 부품을 가열하여 팽창시킨다",
+      "안쪽 부품을 가열하여 팽창시킨다",
+      "양쪽 부품을 모두 가열한다"
+    ],
+    "answer": 3,
+    "explanation": "열박음(shrink fit)은 외부 부품(보스 등)을 가열 팽창시킨 후 내부 부품(축 등)에 끼우고 냉각하면 강한 조임 결합이 이루어지는 방법이다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "열박음",
+      "억지끼워맞춤"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 74,
+    "subject": "기계정비 일반",
+    "year": 2020,
+    "round": 3,
+    "question": "기어 펌프의 장점으로 옳은 것은?",
+    "options": [
+      "가변 용량 제어가 쉽다",
+      "고압에 적합하다",
+      "구조가 간단하고 가격이 저렴하다",
+      "소음이 매우 낮다"
+    ],
+    "answer": 3,
+    "explanation": "기어 펌프는 구조가 단순하고 제작이 용이하여 가격이 저렴하다. 단, 가변 용량 제어가 어렵고 고압에 불리하며 소음이 큰 편이다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "기어펌프",
+      "장점"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": 75,
+    "subject": "기계정비 일반",
+    "year": 2020,
+    "round": 3,
+    "question": "기계 설비의 방청(rust prevention) 처리 방법이 아닌 것은?",
+    "options": [
+      "도금 처리",
+      "도장 처리",
+      "방청 오일 도포",
+      "어닐링(annealing) 처리"
+    ],
+    "answer": 2,
+    "explanation": "어닐링(풀림) 처리는 금속의 내부 응력을 제거하고 연화시키는 열처리 방법으로 방청과는 관련이 없다. 도금, 도장, 방청 오일은 부식 방지에 사용된다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "방청처리",
+      "부식방지"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": 76,
+    "subject": "기계정비 일반",
+    "year": 2020,
+    "round": 3,
+    "question": "오일 씰(oil seal)의 주요 기능은?",
+    "options": [
+      "베어링에 하중을 전달한다",
+      "축과 하우징 사이의 오일 누설을 방지한다",
+      "진동을 흡수한다",
+      "열을 방산한다"
+    ],
+    "answer": 4,
+    "explanation": "오일 씰(lip seal)은 회전축과 하우징 사이에 설치되어 윤활유의 누설을 방지하고 외부 이물질의 침입을 막는 밀봉 장치이다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "오일씰",
+      "밀봉"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": 77,
+    "subject": "기계정비 일반",
+    "year": 2020,
+    "round": 3,
+    "question": "나사의 피치(pitch)란?",
+    "options": [
+      "나사산의 높이",
+      "인접한 두 나사산 사이의 거리",
+      "나사의 총 길이",
+      "나사의 바깥 지름"
+    ],
+    "answer": 1,
+    "explanation": "나사의 피치(pitch)는 같은 방향의 인접한 두 나사산 사이의 거리(축 방향 거리)를 말한다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "나사피치",
+      "나사"
+    ],
+    "difficulty": 1
+  },
+  {
+    "id": 78,
+    "subject": "기계정비 일반",
+    "year": 2020,
+    "round": 3,
+    "question": "스프링의 직렬 연결과 병렬 연결에 대한 설명으로 옳은 것은?",
+    "options": [
+      "직렬 연결 시 전체 스프링 상수는 각 스프링 상수의 합이다",
+      "병렬 연결 시 전체 스프링 상수는 각 스프링 상수보다 작아진다",
+      "병렬 연결 시 전체 스프링 상수는 각 스프링 상수의 합이다",
+      "직렬 연결과 병렬 연결의 스프링 상수는 같다"
+    ],
+    "answer": 2,
+    "explanation": "병렬 연결에서는 각 스프링의 상수가 더해진다(k_총 = k1 + k2). 직렬 연결에서는 1/k_총 = 1/k1 + 1/k2 이므로 전체 상수가 작아진다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "스프링",
+      "직렬병렬"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 79,
+    "subject": "기계정비 일반",
+    "year": 2020,
+    "round": 3,
+    "question": "금속의 경도 시험 중 로크웰 경도(HRC)에서 주로 사용하는 압입자와 하중은?",
+    "options": [
+      "강구 압입자, 3kgf 기준 하중",
+      "다이아몬드 원뿔 압입자(120°), 150kgf 하중",
+      "비커스 압입자, 30kgf 하중",
+      "강구 압입자, 100kgf 하중"
+    ],
+    "answer": 2,
+    "explanation": "로크웰 C 스케일(HRC)은 120° 다이아몬드 원뿔 압입자(Brale)를 사용하고 총 하중 150kgf를 적용한다.",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "로크웰경도",
+      "경도시험"
+    ],
+    "difficulty": 2
+  },
+  {
+    "id": 80,
+    "subject": "기계정비 일반",
+    "year": 2020,
+    "round": 3,
+    "question": "펌프의 비교 회전도(비속도)가 클수록 어떤 형식의 펌프인가?",
+    "options": [
+      "왕복 펌프",
+      "원심 펌프(저유량 고양정)",
+      "사류 펌프",
+      "축류 펌프(고유량 저양정)"
+    ],
+    "answer": 3,
+    "explanation": "비교 회전도(비속도)가 클수록 유량이 크고 양정이 낮은 축류 펌프에 해당한다. 비속도 순서: 원심(소) < 사류 < 축류(대)",
+    "image_url": null,
+    "exp_image_url": null,
+    "tags": [
+      "비속도",
+      "펌프"
+    ],
+    "difficulty": 2
   }
 ]
