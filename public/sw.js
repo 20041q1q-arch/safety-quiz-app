@@ -1,18 +1,6 @@
-const CACHE_NAME = 'quiz-app-v1'
-const STATIC_ASSETS = [
-  '/',
-  '/quiz',
-  '/exam',
-  '/speed',
-  '/wrong-notes',
-  '/stats',
-  '/data/questions.json',
-]
+const CACHE_NAME = 'quiz-app-v2'
 
 self.addEventListener('install', (event) => {
-  event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(STATIC_ASSETS))
-  )
   self.skipWaiting()
 })
 
@@ -29,18 +17,29 @@ self.addEventListener('fetch', (event) => {
   const { request } = event
   const url = new URL(request.url)
 
-  // API 요청은 네트워크 우선
-  if (url.pathname.startsWith('/api/')) {
+  if (request.method !== 'GET') return
+
+  if (url.pathname.endsWith('.json') || url.pathname.endsWith('.html') || url.pathname === url.origin + '/') {
     event.respondWith(
-      fetch(request).catch(() => new Response(JSON.stringify([]), {
-        headers: { 'Content-Type': 'application/json' },
-      }))
+      fetch(request)
+        .then((res) => {
+          const clone = res.clone()
+          caches.open(CACHE_NAME).then((cache) => cache.put(request, clone))
+          return res
+        })
+        .catch(() => caches.match(request).then((cached) => cached ?? new Response('Offline', { status: 503 })))
     )
     return
   }
 
-  // 정적 자산은 캐시 우선
   event.respondWith(
-    caches.match(request).then((cached) => cached ?? fetch(request))
+    caches.match(request).then((cached) => {
+      if (cached) return cached
+      return fetch(request).then((res) => {
+        const clone = res.clone()
+        caches.open(CACHE_NAME).then((cache) => cache.put(request, clone))
+        return res
+      })
+    })
   )
 })

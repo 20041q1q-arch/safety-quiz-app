@@ -2,11 +2,13 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import type { UploadResult } from '@/types'
+import type { Question } from '@/types'
+import { loadQuestions } from '@/lib/questions'
+import { cacheQuestions } from '@/lib/indexeddb/db'
 
 export default function AdminUploadPage() {
   const [text, setText] = useState('')
-  const [result, setResult] = useState<UploadResult | null>(null)
+  const [result, setResult] = useState<{ inserted: number; duplicates: number; errors: string[] } | null>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
 
@@ -16,17 +18,57 @@ export default function AdminUploadPage() {
     setResult(null)
 
     try {
-      const parsed = JSON.parse(text)
-      const res = await fetch('/api/upload', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(parsed),
-      })
-      const data = await res.json()
-      if (!res.ok) throw new Error(data.error ?? '업로드 실패')
-      setResult(data)
+      const parsed = JSON.parse(text) as Partial<Question>[]
+      if (!Array.isArray(parsed)) throw new Error('JSON 배열 형식이어야 합니다')
+
+      const existing = await loadQuestions()
+      const existingSet = new Set(existing.map((q) => `${q.subject}::${q.question}`))
+
+      let maxId = Math.max(0, ...existing.map((q) => q.id))
+      const errors: string[] = []
+      const newQuestions: Question[] = []
+      let duplicates = 0
+
+      for (let i = 0; i < parsed.length; i++) {
+        const row = parsed[i]
+        if (!row.subject || !row.question || !row.options || row.options.length !== 4 || !row.answer) {
+          errors.push(`[${i}] 필수 필드 누락 (subject, question, options[4], answer)`)
+          continue
+        }
+        if (row.answer < 1 || row.answer > 4) {
+          errors.push(`[${i}] answer는 1~4`)
+          continue
+        }
+        const key = `${row.subject}::${row.question}`
+        if (existingSet.has(key)) {
+          duplicates++
+          continue
+        }
+        maxId++
+        newQuestions.push({
+          id: maxId,
+          subject: row.subject,
+          year: row.year ?? null,
+          round: row.round ?? null,
+          question: row.question,
+          options: row.options,
+          answer: row.answer,
+          explanation: row.explanation ?? '',
+          image_url: row.image_url,
+          exp_image_url: row.exp_image_url,
+          tags: row.tags,
+          difficulty: row.difficulty,
+        })
+      }
+
+      if (newQuestions.length > 0) {
+        const all = [...existing, ...newQuestions]
+        await cacheQuestions(all)
+      }
+
+      setResult({ inserted: newQuestions.length, duplicates, errors })
     } catch (e) {
-      setError(String(e))
+      setError(e instanceof Error ? e.message : String(e))
     } finally {
       setLoading(false)
     }
@@ -38,18 +80,6 @@ export default function AdminUploadPage() {
     const content = await file.text()
     setText(content)
   }
-
-  const sampleJson = JSON.stringify([
-    {
-      subject: '설비보전',
-      year: 2024,
-      round: 1,
-      question: '문제 텍스트를 여기에 입력하세요.',
-      options: ['선택지1', '선택지2', '선택지3', '선택지4'],
-      answer: 1,
-      explanation: '해설을 여기에 입력하세요.',
-    },
-  ], null, 2)
 
   return (
     <div className="flex-1 flex flex-col p-4 gap-4 pb-8">
@@ -66,7 +96,6 @@ export default function AdminUploadPage() {
         </p>
       </div>
 
-      {/* 파일 업로드 */}
       <div className="bg-slate-800/60 rounded-xl border border-slate-700/40 p-3">
         <label className="block text-slate-300 text-sm mb-2 font-medium">JSON 파일 선택</label>
         <input
@@ -77,13 +106,12 @@ export default function AdminUploadPage() {
         />
       </div>
 
-      {/* JSON 직접 입력 */}
       <div className="flex flex-col gap-2">
         <label className="text-slate-300 text-sm font-medium">또는 JSON 직접 입력</label>
         <textarea
           value={text}
           onChange={(e) => setText(e.target.value)}
-          placeholder={sampleJson}
+          placeholder='[{"subject":"과목명","question":"문제","options":["1","2","3","4"],"answer":1,"explanation":"해설"}]'
           className="w-full h-48 bg-slate-900 border border-slate-700 rounded-xl p-3 text-slate-300 text-xs font-mono resize-none focus:outline-none focus:border-blue-500"
         />
       </div>
@@ -96,9 +124,9 @@ export default function AdminUploadPage() {
 
       {result && (
         <div className="bg-green-900/20 border border-green-700/30 rounded-xl p-4">
-          <p className="text-green-300 text-sm font-semibold">업로드 완료</p>
+          <p className="text-green-300 text-sm font-semibold">업로드 완료 (IndexedDB 저장)</p>
           <div className="mt-2 text-sm space-y-1">
-            <p className="text-slate-300">✓ 추가됨: <span className="text-green-400 font-bold">{result.inserted}개</span></p>
+            <p className="text-slate-300">추가됨: <span className="text-green-400 font-bold">{result.inserted}개</span></p>
             <p className="text-slate-300">중복 제외: <span className="text-yellow-400">{result.duplicates}개</span></p>
             {result.errors.length > 0 && (
               <div>
@@ -117,13 +145,8 @@ export default function AdminUploadPage() {
         disabled={!text.trim() || loading}
         className="w-full py-4 rounded-2xl bg-blue-600 text-white font-semibold disabled:opacity-40 active:bg-blue-700"
       >
-        {loading ? '업로드 중...' : '업로드하기'}
+        {loading ? '처리 중...' : 'IndexedDB에 추가하기'}
       </button>
-
-      <div className="bg-slate-800/60 rounded-xl p-3 border border-slate-700/40">
-        <p className="text-slate-400 text-xs font-semibold mb-2">JSON 형식 예시</p>
-        <pre className="text-slate-500 text-xs overflow-x-auto no-scrollbar">{sampleJson}</pre>
-      </div>
     </div>
   )
 }
