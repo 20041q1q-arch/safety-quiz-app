@@ -30,7 +30,8 @@ export async function loadQuestions(): Promise<Question[]> {
   }
 
   // JSON 파일에서 로드
-  const res = await fetch('/data/questions.json')
+  const bp = process.env.NEXT_PUBLIC_BASE_PATH || ''
+  const res = await fetch(`${bp}/data/questions.json`)
   const data: Question[] = await res.json()
   _questions = data
 

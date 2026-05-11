@@ -1,24 +1,16 @@
 import type { NextConfig } from 'next'
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
+
 const nextConfig: NextConfig = {
+  output: 'export',
+  basePath: basePath || undefined,
+  trailingSlash: true,
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: '*.supabase.co',
-        pathname: '/storage/v1/object/public/**',
-      },
-    ],
-    formats: ['image/webp', 'image/avif'],
+    unoptimized: true,
   },
   experimental: {
     optimizePackageImports: ['idb', 'date-fns'],
-  },
-  outputFileTracingIncludes: {
-    '/api/questions': ['./data/**/*'],
-    '/api/questions/random': ['./data/**/*'],
-    '/api/stats': ['./data/**/*'],
-    '/api/upload': ['./data/**/*'],
   },
 }
 
