@@ -14,6 +14,12 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: ['idb', 'date-fns'],
   },
+  outputFileTracingIncludes: {
+    '/api/questions': ['./data/**/*'],
+    '/api/questions/random': ['./data/**/*'],
+    '/api/stats': ['./data/**/*'],
+    '/api/upload': ['./data/**/*'],
+  },
 }
 
 export default nextConfig
